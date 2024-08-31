@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Color
+
+$light-gray: #eaeaea;
+$dark-gray: #d7d7d7;
+$black: #000000;
+$dark-black: #252a34;
+$red: #d10931;
+$blue: #6eacda;
+$font-family-1: "Poppins", system-ui;
+$font-family-2: "Open Sans", system-ui;
+
+// General Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $font-family-2;
+}
+
+%container {
+  min-width: 900px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+%d-flex {
+  display: flex;
+  align-items: center;
+}
+
+%d-flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+%d-flex-column-al-js-between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%btn-styles {
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  %container {
+    min-width: 320px;
+  }
+}

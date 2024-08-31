@@ -1,0 +1,45 @@
+@import "../scss/general_variables";
+
+#footer {
+  background-color: $black;
+  .footer-container {
+    @extend %container, %d-flex-justify-between;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    width: 85%;
+    img {
+      width: 200px;
+    }
+    .footer-nav {
+      @extend %d-flex-column-al-js-between;
+      align-items: start !important;
+      gap: 1.5rem;
+      h5 {
+        color: white;
+        font-size: 1.7rem;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.4s ease;
+        font-size: 1.1rem;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #footer {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      .footer-nav {
+        align-items: center !important;
+      }
+    }
+  }
+}
